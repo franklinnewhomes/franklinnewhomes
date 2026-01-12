@@ -1,28 +1,296 @@
-/* Reset & Fonts */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; }
-.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+/* ==============================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Header */
-.site-header { background: #004080; color: white; padding: 1rem 0; display: flex; justify-content: space-between; align-items: center; }
-.site-header a { color: white; text-decoration: none; margin: 0 1rem; }
-.logo a { font-weight: 700; font-size: 1.5rem; }
-.main-nav .btn-primary { background: #ff6600; padding: 0.5rem 1rem; border-radius: 5px; }
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #ffffff;
+}
 
-/* Hero */
-.hero { background: url('../images/hero.jpg') no-repeat center/cover; color: white; text-align: center; padding: 6rem 1rem; }
-.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-.btn-hero { background: #ff6600; color: white; padding: 1rem 2rem; border-radius: 5px; font-weight: bold; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* Sections */
-h3 { margin-top: 2rem; margin-bottom: 1rem; font-weight: 700; }
-.cards { display: flex; gap: 1rem; flex-wrap: wrap; }
-.card { background: #f8f8f8; padding: 1.5rem; border-radius: 10px; flex: 1; min-width: 250px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+img {
+  max-width: 100%;
+  display: block;
+}
 
-/* Lead Form */
-.lead-form form { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
-.lead-form input, .lead-form button { padding: 0.75rem; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; }
-.lead-form button { background: #ff6600; color: white; border: none; cursor: pointer; font-weight: bold; }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-/* Footer */
-.site-footer { background: #222; color: white; text-align: center; padding: 1.5rem 0; margin-top: 3rem; }
+/* ==============================
+   HEADER / NAV
+================================ */
+.site-header {
+  background: #0a2540;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.main-nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn-primary {
+  background: #ff6a00;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #e55d00;
+}
+
+/* ==============================
+   HERO SECTION
+================================ */
+.hero-listings {
+  min-height: 70vh;
+  max-height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+/* Dark overlay */
+.hero-listings::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-content h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.btn-hero {
+  background: #ff6a00;
+  padding: 1rem 2.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* ==============================
+   SECTION HEADERS
+================================ */
+section {
+  margin-top: 4rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ==============================
+   LISTINGS GRID
+================================ */
+.listings-section h3 {
+  margin-bottom: 2.5rem;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.listing-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.listing-details {
+  padding: 1.4rem;
+}
+
+.listing-details h4 {
+  font-size: 1.4rem;
+  color: #0a2540;
+  margin-bottom: 0.5rem;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff6a00;
+  font-weight: 600;
+}
+
+/* ==============================
+   CARDS (BUILDERS / NEIGHBORHOODS)
+================================ */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #0a2540;
+}
+
+/* ==============================
+   LEAD FORM
+================================ */
+.lead-form {
+  background: #f3f6fa;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin-top: 5rem;
+}
+
+.lead-form h3 {
+  margin-bottom: 1.5rem;
+}
+
+.lead-form p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.lead-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.lead-form input {
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.lead-form button {
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  background: #ff6a00;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ==============================
+   BLOG PREVIEW
+================================ */
+.blog-preview ul {
+  list-style: none;
+  text-align: center;
+}
+
+.blog-preview li {
+  margin-bottom: 0.75rem;
+}
+
+.blog-preview a {
+  color: #0a2540;
+  font-weight: 600;
+}
+
+/* ==============================
+   FOOTER
+================================ */
+.site-footer {
+  background: #0a2540;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+}
+
+/* ==============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .main-nav a {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}
