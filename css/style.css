@@ -294,3 +294,9 @@ h3 {
     text-align: center;
   }
 }
+
+/* Prevent hero headline from wrapping */
+.hero h2 {
+  white-space: nowrap;
+}
+
