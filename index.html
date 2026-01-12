@@ -3,122 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Homes in Franklin, TN | Find Your Dream Home</title>
-  <meta name="description" content="Explore new homes, latest listings, and expert guidance to find your dream home in Franklin, TN.">
+  <title>New Homes in Franklin TN | Find Your Dream Home</title>
+  <meta name="description" content="Discover new homes in Franklin, TN. Get exclusive listings, top builders, and expert guidance.">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Franklin New Homes</a></h1>
+      <nav class="main-nav">
+        <a href="builders.html">Builders</a>
+        <a href="listings.html">Listings</a>
+        <a href="buying-guide.html">Buying Guide</a>
+        <a href="contact.html" class="btn-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Header -->
-<header class="site-header">
-  <div class="container">
-    <h1 class="logo"><a href="index.html">Franklin New Homes</a></h1>
-    <nav class="main-nav">
-      <a href="builders.html">Builders</a>
-      <a href="listings.html">Listings</a>
-      <a href="buying-guide.html">Buying Guide</a>
-      <a href="blog/first-time-buyers.html">Blog</a>
-      <a href="contact.html" class="btn-primary">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Find Your Dream Home in Franklin, TN</h2>
+      <p>Move-in ready homes, modern custom builds, and the best builders in town — all in one place.</p>
+      <a href="#lead-form" class="btn-primary btn-hero">Get Matched With a Builder</a>
+    </div>
+  </section>
 
-<!-- Hero -->
-<section class="hero-listings" style="background-image: url('images/hero.jpg');">
-  <div class="container hero-content">
-    <h2>Explore New Homes in Franklin, TN</h2>
-    <p>Move-in ready, custom builds, and exclusive listings — all in one place.</p>
-    <a href="#featured-homes" class="btn-primary btn-hero">View Listings</a>
-  </div>
-</section>
-
-<!-- Featured Homes -->
-<section id="featured-homes" class="container listings-section">
-  <h3>Featured New Construction Homes</h3>
-  <div class="listings-grid">
-
-    <!-- Listing Card 1 -->
-    <div class="listing-card">
-      <img src="images/listing1.jpg" alt="Modern home in Franklin TN">
-      <div class="listing-details">
-        <h4>$499,900</h4>
-        <p>4 Beds • 3 Baths • 2,500 sqft</p>
-        <a href="listings.html" class="btn-secondary">View Details</a>
+  <!-- Featured Builders -->
+  <section class="featured-builders container">
+    <h3>Featured Builders</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Smith & Sons Homes</h4>
+        <p>Modern family homes with exceptional craftsmanship.</p>
+      </div>
+      <div class="card">
+        <h4>Franklin Custom Builders</h4>
+        <p>Luxury customizable homes with premium finishes.</p>
+      </div>
+      <div class="card">
+        <h4>Maple Grove Homes</h4>
+        <p>Affordable new constructions in prime Franklin neighborhoods.</p>
       </div>
     </div>
+  </section>
 
-    <!-- Listing Card 2 -->
-    <div class="listing-card">
-      <img src="images/listing2.jpg" alt="Charming new home">
-      <div class="listing-details">
-        <h4>$529,000</h4>
-        <p>3 Beds • 2.5 Baths • 2,200 sqft</p>
-        <a href="listings.html" class="btn-secondary">View Details</a>
+  <!-- Available Listings -->
+  <section class="listings container">
+    <h3>Available Homes</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>123 Maple Street</h4>
+        <p>3 Bed / 2 Bath | $450,000</p>
+      </div>
+      <div class="card">
+        <h4>456 Oak Avenue</h4>
+        <p>4 Bed / 3 Bath | $525,000</p>
+      </div>
+      <div class="card">
+        <h4>789 Pine Drive</h4>
+        <p>3 Bed / 2.5 Bath | $480,000</p>
       </div>
     </div>
+  </section>
 
-    <!-- Listing Card 3 -->
-    <div class="listing-card">
-      <img src="images/listing3.jpg" alt="Spacious family home">
-      <div class="listing-details">
-        <h4>$575,000</h4>
-        <p>5 Beds • 4 Baths • 3,100 sqft</p>
-        <a href="listings.html" class="btn-secondary">View Details</a>
+  <!-- Lead Form -->
+  <section id="lead-form" class="lead-form container">
+    <h3>Get Matched With a Builder</h3>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- Latest Blog Posts -->
+  <section class="blog-preview container">
+    <h3>From Our Blog</h3>
+    <div class="cards">
+      <div class="card">
+        <a href="blog/first-time-buyers.html"><h4>Top 5 Tips for First-Time Buyers</h4></a>
+      </div>
+      <div class="card">
+        <a href="blog/why-franklin.html"><h4>Why Franklin is the Best Place for New Homes</h4></a>
+      </div>
+      <div class="card">
+        <a href="blog/financing.html"><h4>How to Finance Your New Construction Home</h4></a>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- Neighborhood Highlights -->
-<section class="container neighborhoods-section">
-  <h3>Explore Franklin Neighborhoods</h3>
-  <div class="cards">
-
-    <div class="card">
-      <h4><a href="neighborhoods/cool-springs.html">Cool Springs</a></h4>
-      <p>Upscale living with shops, dining & easy access.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Franklin New Homes. All rights reserved.</p>
     </div>
-
-    <div class="card">
-      <h4><a href="neighborhoods/westhaven.html">Westhaven</a></h4>
-      <p>Luxury homes & signature community amenities.</p>
-    </div>
-
-    <div class="card">
-      <h4><a href="neighborhoods/fieldstone-farms.html">Fieldstone Farms</a></h4>
-      <p>Family-focused community with parks & pools.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Lead Capture Form -->
-<section id="lead-form" class="lead-form container">
-  <h3>Ready to Get Started?</h3>
-  <p>Submit your info and we’ll match you with the right builder and listings.</p>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="tel" name="phone" placeholder="Phone" required>
-    <button class="btn-primary">Get Matched</button>
-  </form>
-</section>
-
-<!-- Latest Blog -->
-<section class="container blog-preview">
-  <h3>Latest Articles</h3>
-  <ul>
-    <li><a href="blog/first-time-buyers.html">Top 5 Tips for First-Time Buyers</a></li>
-    <li><a href="blog/why-franklin.html">Why Franklin Is a Great Place to Buy</a></li>
-    <li><a href="blog/financing.html">How to Finance Your New Construction Home</a></li>
-  </ul>
-</section>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <p>© 2026 Franklin New Homes</p>
-</footer>
-
+  </footer>
 </body>
 </html>
