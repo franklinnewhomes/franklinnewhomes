@@ -87,7 +87,11 @@ a {
 .hero {
   position: relative;
   min-height: 70vh;
-  background: url("../images/hero.jpg") center center / cover no-repeat;
+  background-image: url("../images/hero.jpg");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
