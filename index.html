@@ -6,61 +6,102 @@
   <title>New Homes in Franklin TN | Find Your Dream Home</title>
   <meta name="description" content="Discover new homes in Franklin, TN. Get exclusive listings, top builders, and expert guidance.">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <!-- Header -->
+  <header class="site-header">
     <div class="container">
-      <h1><a href="index.html">Franklin New Homes</a></h1>
-      <nav>
+      <h1 class="logo"><a href="index.html">Franklin New Homes</a></h1>
+      <nav class="main-nav">
         <a href="builders.html">Builders</a>
         <a href="listings.html">Listings</a>
         <a href="buying-guide.html">Buying Guide</a>
-        <a href="contact.html">Contact</a>
         <a href="blog/first-time-buyers.html">Blog</a>
+        <a href="contact.html" class="btn-primary">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Find Your Dream New Home in Franklin, TN</h2>
-    <p>Explore move-in ready homes, custom builds, and top builders in Franklin. Submit your info to get matched with the perfect builder.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Find Your Dream Home in Franklin, TN</h2>
+      <p>Move-in ready homes, modern custom builds, and the best builders in town — all in one place.</p>
+      <a href="#lead-form" class="btn-primary btn-hero">Get Matched With a Builder</a>
+    </div>
+  </section>
 
-    <section id="lead-form">
-      <h3>Get Matched With a Builder</h3>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Phone" required>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+  <!-- Featured Builders -->
+  <section class="featured-builders container">
+    <h3>Featured Builders</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Smith & Sons Homes</h4>
+        <p>Modern family homes with exceptional craftsmanship.</p>
+      </div>
+      <div class="card">
+        <h4>Franklin Custom Builders</h4>
+        <p>Luxury customizable homes with premium finishes.</p>
+      </div>
+      <div class="card">
+        <h4>Maple Grove Homes</h4>
+        <p>Affordable new constructions in prime Franklin neighborhoods.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h3>Featured Builders</h3>
-      <ul>
-        <li>Smith & Sons Homes</li>
-        <li>Franklin Custom Builders</li>
-        <li>Maple Grove Homes</li>
-      </ul>
-    </section>
+  <!-- Available Listings -->
+  <section class="listings container">
+    <h3>Available Homes</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>123 Maple Street</h4>
+        <p>3 Bed / 2 Bath | $450,000</p>
+      </div>
+      <div class="card">
+        <h4>456 Oak Avenue</h4>
+        <p>4 Bed / 3 Bath | $525,000</p>
+      </div>
+      <div class="card">
+        <h4>789 Pine Drive</h4>
+        <p>3 Bed / 2.5 Bath | $480,000</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h3>Available Listings</h3>
-      <p>Check out the latest move-in ready homes in Franklin, TN.</p>
-    </section>
+  <!-- Lead Form -->
+  <section id="lead-form" class="lead-form container">
+    <h3>Get Matched With a Builder</h3>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone" required>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
 
-    <section>
-      <h3>Latest Blog Posts</h3>
-      <ul>
-        <li><a href="blog/first-time-buyers.html">Top 5 Tips for First-Time Buyers in Franklin</a></li>
-        <li><a href="blog/why-franklin.html">Why Franklin is the Best Place for New Homes</a></li>
-        <li><a href="blog/financing.html">How to Finance Your New Construction Home</a></li>
-      </ul>
-    </section>
-  </main>
+  <!-- Latest Blog Posts -->
+  <section class="blog-preview container">
+    <h3>From Our Blog</h3>
+    <div class="cards">
+      <div class="card">
+        <a href="blog/first-time-buyers.html"><h4>Top 5 Tips for First-Time Buyers</h4></a>
+      </div>
+      <div class="card">
+        <a href="blog/why-franklin.html"><h4>Why Franklin is the Best Place for New Homes</h4></a>
+      </div>
+      <div class="card">
+        <a href="blog/financing.html"><h4>How to Finance Your New Construction Home</h4></a>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2026 Franklin New Homes. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Franklin New Homes. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
