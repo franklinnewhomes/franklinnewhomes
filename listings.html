@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Available Homes in Franklin TN | Franklin New Homes</title>
-<meta name="description" content="Explore move-in ready and new construction listings in Franklin, TN. Find your dream home today.">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Available Homes in Franklin TN | Franklin New Homes</title>
+  <meta name="description" content="Browse move-in ready and new construction homes in Franklin, TN. View photos, prices, and get matched with builders.">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- ================= HEADER ================= -->
 <header class="site-header">
-<div class="container">
-<h1 class="logo"><a href="index.html">Franklin New Homes</a></h1>
-<nav class="main-nav">
-<a href="builders.html">Builders</a>
-<a href="listings.html">Listings</a>
-<a href="buying-guide.html">Buying Guide</a>
-<a href="blog/first-time-buyers.html">Blog</a>
-<a href="contact.html" class="btn-primary">Contact</a>
-</nav>
-</div>
+  <div class="container">
+    <h1 class="logo">
+      <a href="index.html">Franklin New Homes</a>
+    </h1>
+
+    <nav class="main-nav">
+      <a href="builders.html">Builders</a>
+      <a href="listings.html">Listings</a>
+      <a href="buying-guide.html">Buying Guide</a>
+      <a href="blog/first-time-buyers.html">Blog</a>
+      <a href="contact.html" class="btn-primary">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<!-- ================= HERO ================= -->
 <section class="hero">
-<div class="container hero-content">
-<h2>Explore Move-In Ready Homes in Franklin</h2>
-<p>Browse new construction and available homes in top neighborhoods.</p>
-<a href="#lead-form" class="btn-primary btn-hero">Get Matched With a Builder</a>
-</div>
+  <div class="container hero-content">
+    <h2>Available Homes in Franklin, TN</h2>
+    <p>Move-in ready and new construction homes in Franklin’s top neighborhoods.</p>
+    <a href="#lead-form" class="btn-primary btn-hero">
+      Get Matched With a Builder
+    </a>
+  </div>
 </section>
 
+<!-- ================= LISTINGS ================= -->
 <main class="container">
-<section class="listings">
-<h3>Available Homes</h3>
-<div class="cards">
-  <div class="card">
-    <h4>2962 Del Rio Pike</h4>
-    <p>5 Bed / 5 Bath | $1,699,900</p>
-  </div>
-  <div class="card">
-    <h4>924 Championship Blvd</h4>
-    <p>3 Bed / 4 Bath | $1,277,544</p>
-  </div>
-  <div class="card">
-    <h4>5041 Owenruth Dr</h4>
-    <p>4 Bed / 4 Bath | $999,900</p>
-  </div>
-</div>
-</section>
+
+  <section class="listings">
+    <h3>Featured Available Homes</h3>
+
+    <div class="cards listings-grid">
+
+      <!-- LISTING 1 -->
+      <div class="card listing-card">
+        <img src="images/listings/del-rio-pike.jpg" alt="2962 Del Rio Pike Franklin TN">
+        <div class="listing-info">
+          <h4>2962 Del Rio Pike</h4>
+          <p>5 Bed · 5 Bath · 4,800+ Sq Ft</p>
+          <p class="price">$1,699,900</p>
+          <a href="#lead-form" class="listing-btn">Request Info</a>
+        </div>
+      </div>
+
+      <!-- LISTING 2 -->
+      <div class="card listing-card">
+        <img src="images/listings/championship-blvd.jpg" alt="924 Championship Blvd Franklin TN">
+        <div class="listing-info">
+          <h4>924 Championship Blvd</h4>
+          <p>3 Bed · 4 Bath · Golf Course Community</p>
+          <p class="price">$1,277,544</p>
+          <a href="#lead-form" class="listing-btn">Request Info</a>
+        </div>
+      </div>
+
+      <!-- LISTING 3 -->
+      <div class="card listing-card">
+        <img src="images/listings/owenruth-dr.jpg" alt="5041 Owenruth Dr Franklin TN">
+        <div class="listing-info">
+          <h4>5041 Owenruth Dr</h4>
+          <p>4 Bed · 4 Bath · New Construction</p>
+          <p class="price">$999,900</p>
+          <a href="#lead-form" class="listing-btn">Request Info</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </main>
 
+<!-- ================= LEAD FORM ================= -->
 <section id="lead-form" class="lead-form container">
-<h3>Get Matched With a Builder</h3>
-<form action
+  <h3>Get Matched With a Builder</h3>
+  <p>Tell us what you’re looking for and we’ll connect you with the best homes and builders.</p>
 
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <button type="submit" class="btn-primary">
+      Get Available Homes
+    </button>
+  </form>
+</section>
 
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <p>© 2026 Franklin New Homes. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
